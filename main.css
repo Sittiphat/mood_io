@@ -200,6 +200,40 @@ body {
 
   color: #ffffff;
 }
+
+.v8_47 {
+  position: absolute;
+  width: 600px;
+  height: 88px;
+  left: 400px;
+  top: 100px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 30;
+  font-size: 30.904px;
+  line-height: 46px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.v8_48 {
+  position: absolute;
+  width: 220px;
+  height: 88px;
+  left: 600px;
+  top: 570px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 30;
+  font-size: 30.904px;
+  line-height: 46px;
+  text-align: center;
+
+  color: #000000;
+}
 .v12_140 {
   width: 260px;
   height: 130px;
