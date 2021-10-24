@@ -168,16 +168,20 @@ body {
   text-align: center;
 }
 .v8_45 {
-  width: 651px;
-  color: rgba(0,0,0,1);
   position: absolute;
-  top: 524px;
-  left: 395px;
+  width: 1108px;
+  height: 88px;
+  left: 166px;
+  top: 553px;
+
   font-family: Poppins;
-  font-weight: Light;
-  font-size: 30px;
-  opacity: 1;
+  font-style: normal;
+  font-weight: 30;
+  font-size: 30.904px;
+  line-height: 46px;
   text-align: center;
+
+  color: #000000;
 }
 .v12_140 {
   width: 260px;
