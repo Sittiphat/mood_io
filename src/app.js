@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require('cors');
 const path = require("path");
+import * as tf from "@tensorflow/tfjs";
+const tf = require("@tensorflow/tfjs");
 // const translateText = require("../utility/translate.js");
 // const transformText = require("../utility/transformer.js");
 
@@ -18,44 +20,23 @@ console.log(publicDirectoryPath);
 app.use(express.static(publicDirectoryPath));
 app.use(express.static(mlDirectoryPath));
 
+// Where model lives on server
 // http://localhost:3000/tfjs_files/model.json
+
+
+
+let model;
+
+(async function() {
+    model = await tf.loadModel("http://localhost:3000/tfjs_files/model.json");
+    console.log(model);
+})();
 
 // If wrong link is provided instructions are provided below
 app.get("*", (req, res) => {
     res.send("Default statically rendered page");
 });
 
-// app.get("/", (req, res) => {
-//     res.render("main.html");
-// });
-
-// app.post("/translate-ch", (req, res) => {
-
-//     translateText(req.body, "zh").then(t_t => res.send(t_t));
-
-// });
-
-// app.post("/translate-sp", (req, res) => {
-
-//     translateText(req.body, "es").then(t_t => res.send(t_t));
-// });
-
-// // This is the main API endpoint used in the final version. We transform 
-// // the text by calling our helper function defined in our self-made import module.
-// app.post("/transform", (req, res) => {
-
-//     res.send(transformText(req.body));
-// });
-
-// app.post("/transform-translate-ch", (req, res) => {
-
-//     translateText(transformText(req.body), "zh").then(t_t => res.send(t_t));
-// });
-
-// app.post("/transform-translate-sp", (req, res) => {
-
-//     translateText(transformText(req.body), "es").then(t_t => res.send(t_t));
-// });
 
 // Server listens to incoming request.
 app.listen(port, () => {
