@@ -39,8 +39,7 @@
 
 <body>
     <div class="bg"></div>
-
-    <div class="v8_47 d-flex justify-content-center">Minutes since your last break 0:00</div>
+    <div class="v8_47 d-flex justify-content-center">Minutes since your last break &nbsp <span id="minutes"></span>:<span id="seconds"></span></div>
 
     <div class="container">
         <img id ="webcam" class="img-responsive picture_pos" src="public/img/woman.jpg" alt="Chania" width="450" height="400"> 
@@ -59,6 +58,16 @@
           }
         }
         </script>
+
+<script>
+  var sec = 0;
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+setInterval( function(){
+  $("#seconds").html(pad(++sec%60));
+  $("#minutes").html(pad(parseInt(sec/60,10)));
+}, 1000);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </body>
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
