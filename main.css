@@ -206,7 +206,7 @@ body {
   width: 600px;
   height: 88px;
   left: 400px;
-  top: 100px;
+  top: 80px;
 
   font-family: Poppins;
   font-style: normal;
@@ -220,10 +220,10 @@ body {
 
 .v8_48 {
   position: absolute;
-  width: 220px;
+  width: 600px;
   height: 88px;
-  left: 600px;
-  top: 570px;
+  left: 400px;
+  top: 200px;
 
   font-family: Poppins;
   font-style: normal;
@@ -234,6 +234,24 @@ body {
 
   color: #000000;
 }
+
+.v8_49 {
+  position: absolute;
+  width: 600px;
+  height: 88px;
+  left: 400px;
+  top: 100px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 30;
+  font-size: 30.904px;
+  line-height: 46px;
+  text-align: center;
+
+  color: #000000;
+}
+
 .v12_140 {
   width: 260px;
   height: 130px;
@@ -294,6 +312,46 @@ body {
 
 .picture_pos {
   position: absolute;
-  top: 160px;
+  top: 140px;
   left: 490px;
+}
+
+.relax_pos {
+  position: absolute;
+  top: 238px;
+  left: 509px;
+}
+
+.button1 {
+  position: absolute;
+  width: 220px;
+  height: 88px;
+  left: 490px;
+  top: 550px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 30;
+  font-size: 30.904px;
+  line-height: 46px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.button2 {
+  position: absolute;
+  width: 220px;
+  height: 88px;
+  left: 725px;
+  top: 550px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 30;
+  font-size: 30.904px;
+  line-height: 46px;
+  text-align: center;
+
+  color: #ffffff;
 }

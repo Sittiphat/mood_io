@@ -20,7 +20,7 @@
 }
         .bg {
             /* The image used */
-            background-image: url("public/img/Webcam.svg");
+            background-image: url("public/img/relax.svg");
 
             /* Full height */
             height: 100%; 
@@ -28,7 +28,7 @@
             /* Center and scale the image nicely */
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
         }
         
     </style>
@@ -40,14 +40,14 @@
 <body>
     <div class="bg"></div>
 
-    <div class="v8_47 d-flex justify-content-center">Minutes since your last break 0:00</div>
+    <div class="v8_49 d-flex justify-content-center">You appear stressed.</div>
+    <div class="v8_48 d-flex justify-content-center">Let's take a quick meditation break.</div>
 
     <div class="container">
-        <img id ="webcam" class="img-responsive picture_pos" src="public/img/woman.jpg" alt="Chania" width="450" height="400"> 
+        <img id ="webcam" class="img-responsive relax_pos" src="public/img/relax.jpg" alt="Chania" width="400" height="400"> 
       </div>
 
-    <button type="button" onclick="hide()" class="btn btn-primary button1 center">Hide Feed</button>
-    <button type="button" onclick=window.location.href='relax.html' class="btn btn-primary button2 center">Take Break</button>
+    <button type="button" onclick=window.location.href='webcam.html' class="btn btn-primary v8_46 center">Work</button>
     
     <script>
         function hide() {
